@@ -13,8 +13,8 @@
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  width: 170px;
-  height: 230px;
+  width: 104px;
+  height: 145px;
   .castle-bar{
     width: 320px;
     height: 32px;
@@ -74,19 +74,31 @@
   top: 20px;
 }
 .handcard{
-  height: 230px;
+  // height: 230px;
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  .stage{
+    font-size: 32px;
+    color: rgba(240,235,217,1);
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    word-break: keep-all;
+    text-align: center;
+  }
 }
-.gurrycard{
-  height: 480px;
-  width: 45px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  border: 1px solid #362012;
+.discard{
+  // height: 480px;
+  // width: 45px;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  border: 2px dashed #362012;
+  height: 115px;
+  width: 82px;
   position: absolute;
   right: 20px;
   top: 50%;

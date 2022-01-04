@@ -1,8 +1,14 @@
 <template>
   <div class="card-wrap"
-    :style="{transform: `scale(${scale})`}">
+    :style="{
+      height: `${scale * 230}px`,
+      width: `${scale * 164}px`
+    }">
     <div :class="`card ${back?'back':''}`" 
-    :style="{backgroundPosition: position}"></div>
+    :style="{
+      backgroundPosition: position,
+      transform: `scale(${scale * 0.4})`
+    }"></div>
   </div>
 </template>
 
@@ -64,7 +70,7 @@ export default {
   border: 1px solid rgba(0,0,0,0.5);
   // box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
   overflow: hidden;
-  transform-origin: top left;
+  // transform-origin: top left;
   background-color: #fff;
   .card{
     width: 410px;
